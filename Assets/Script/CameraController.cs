@@ -25,7 +25,7 @@ public class CameraController : MonoBehaviour
         if (target != null)
         {
             Vector3 targetPostion = target.position + offset;
-
+            // dịch chuyển camera đến vị trí mục tiêu
             transform.position = Vector3.SmoothDamp(transform.position, targetPostion, ref cameraVelocity, smoothTime);
         }
     }
